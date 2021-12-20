@@ -16,7 +16,7 @@ int backlightAdjust(int val)
   
   //  val = val/4;
   }
-
+/*
   if(debug == true)
   {
     uint16_t a;
@@ -28,7 +28,7 @@ int backlightAdjust(int val)
     Serial.println(a);
     Serial.println(" ");
   }
-
+*/
   analogWrite(BACKLIGHT,val); // Breytum birtustigi
   return val; // Skilum völdu gildi
 }

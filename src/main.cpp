@@ -73,11 +73,15 @@
 
 void setup()
 { 
+  digitalWrite(1,HIGH); //MCP2515 disabled
+  digitalWrite(STATUS_LED,HIGH);
   boot();
+  digitalWrite(STATUS_LED,LOW);
 }//Void Setup lokar
 
 void loop()
 {
+
   backlightAdjust(backlight_selected); // Við kveikjum á skjá.
   
   if(manual == false && adjust == true)

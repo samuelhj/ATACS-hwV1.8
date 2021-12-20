@@ -8,18 +8,19 @@ void boot()
   pinMode(TIRE_LR, OUTPUT);
   pinMode(AIR_OUT, OUTPUT);
   pinMode(BACKLIGHT, OUTPUT); // Baklýsing PWM
-  pinMode(RESET,OUTPUT); // Reset á skjá
+  //pinMode(RESET,OUTPUT); // Reset á skjá
+  pinMode(STATUS_LED,OUTPUT);
   air_base_close();
 
 // Næst koma skilgreiningar fyrir TFT skjá
-  digitalWrite(RESET,LOW); // Endurræsing á skjá.
-  delay(10); // töf
-  digitalWrite(RESET,HIGH); // Ræsum skjá
-  delay(100); // Töf
+  //digitalWrite(RESET,LOW); // Endurræsing á skjá.
+  //delay(10); // töf
+  //digitalWrite(RESET,HIGH); // Ræsum skjá
+  //delay(100); // Töf
   tft.begin(); // Virkjum skjáinn
   tft.fillScreen(ILI9341_BLACK); // Hreinsum skjáinn og skrifum svartan bakgrunn.
   tft.setRotation(1); // Landscape
-  tft.setSPISpeed(4000000);
+  tft.setSPISpeed(SPISPEED);
 
 // Read from EEPROM
   backlight_selected = EEPROM.read(EBACKLIGHT);

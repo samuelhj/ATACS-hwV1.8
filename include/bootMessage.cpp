@@ -15,14 +15,11 @@
   tft.println("https://ulfraf.space");
 
   
-  if(debug == true)
-  {
-    Serial.begin(115200);
-    Serial.println("ATACS Version: ");
-    Serial.println(VERSION);
-    Serial.println(BUILDDATE);
-    Serial.println("Hofundur: ");
-    Serial.println("Samuel Hjaltalin");
-    Serial.println("https://ulfr.net/");
-  }
- }
+  Serial.begin(115200);
+  Serial.println("ATACS Version: ");
+  Serial.println(VERSION);
+  Serial.println(BUILDDATE);
+  Serial.println("Hofundur: ");
+  Serial.println("Samuel Hjaltalin");
+  Serial.println("https://ulfr.net/");
+}

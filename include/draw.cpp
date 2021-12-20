@@ -60,6 +60,7 @@ void drawMain()
     tft.setCursor(220,220);
     tft.println("debug");
   }
+  warningCheck();
 
 }// drawMain fall lokar
 

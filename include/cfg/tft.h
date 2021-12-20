@@ -23,7 +23,7 @@ TouchScreen ts = TouchScreen(XP, YP, XM, YM, 291); // Skilgreinum breytur fyrir 
 #define TFT_CS 14 // CS er á pinna 14 (20)
 #define TFT_DC 13 // D/C er á pinna 13 (19)
 #define BACKLIGHT 4 // Baklýsing er á pinna 4 (3)
-#define RESET 3 // Reset er á pinna 1 (4)
+//#define RESET 3 // Reset er á pinna 1 (4)
 Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC); // Skilgreining fyrir ILI9341 kóðasafn
 
 // Svo skilgreinum við kassa og önnur form á skjánum.

@@ -5,8 +5,8 @@
 
 // fastar sem eru bundnir við þetta tiltekna tæki.
 //#define SERIALNUMBER "003" 
-#define VERSION "hw1.7.0-swV1.3.2"
-#define BUILDDATE "2021-06-24"
+#define VERSION "hw1.8.0-swV1.0.0"
+#define BUILDDATE "2021-07-13"
 #define CALIBRATE ON // Ef calibrate er ON þá keyrir bara calibrate lúppan.
 
 // Hér skilgreinum við fasta sem breytast ekki.
@@ -52,6 +52,8 @@
 #define AIRBAG_RR 2
 #define AIRBAG_IN 3
 
+// Status LED
+#define STATUS_LED 0
 
 // Skilgreinum pinna fyrir skynjara.
 // Define pins for inputs
@@ -61,7 +63,7 @@
 // Skilgreinum pinna fyrir PWM
 //#define BACKLIGHT 4 
 // Það þarf að finna þetta í kóðanum, og lagfæra, þessi breyta er týnd.
-
+#define SPISPEED 4000000
 
 // Global variables
 // Skilgreinum global breytur
