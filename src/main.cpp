@@ -122,7 +122,7 @@ void loop()
       if((y>50) && y< 150) // Athugum staðsetningu á y ásnum.
       {
         delay(150);
-        adjust = false; // Við hættum að stilla
+        //adjust = false; // Við hættum að stilla
         if((selectedPressure < 6) && (selectedPressure > 0)) // Ef þrýstingur er undir 6 psi en yfir 0psi
         {
           selectedPressure = selectedPressure - 0.25; // Þá lækkum við um 0.25 psi
@@ -161,7 +161,7 @@ void loop()
     {
       if((y>50) && y< 150)
       {
-        adjust = false;
+        //adjust = false;
         delay(150); // töf svo við hækkum ekki of hratt up
         if(selectedPressure >= 6 && manual == false) // sé þrýstingur yfir 6psi hækkum við um 1psi í skrefi
         {
@@ -213,6 +213,7 @@ void loop()
             air_base_inflate();
           }
         }
+        
         tiretoken = 0;
         toggleMenu();
         updateValues(); 
