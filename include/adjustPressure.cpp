@@ -256,9 +256,9 @@ void adjustRFT()
     if(timer_inflate_RFT >= interval_inflate_RFT)
     {
       tiretoken = 4; //Förum síðan í næsta dekk eftir þessa mælingu
-      read_LRT(); // Lesum vinstra afturdekk
+      read_RFT(); // Lesum vinstra afturdekk
       updateValues(); // Uppfærum gildin
-      timer_inflate_LRT = 0; // rest timer
+      timer_inflate_RFT = 0; // reset timer
       timer_measure = millis();
     }
   }// Hækkun þrýstings fall lokar

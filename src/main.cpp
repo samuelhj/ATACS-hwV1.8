@@ -44,7 +44,7 @@
 #include <EEPROM.h> // Við þurfum library til að skrifa og lesa EEPROM.
 #include <Wire.h>
 //  For Touchscreen // Fyrir snertiskjá
-#include <TouchScreen.h> // Við þurfum library til að lesa snertingu af skjá.
+#include "TouchScreen.h" // Við þurfum library til að lesa snertingu af skjá.
 #include <Adafruit_GFX.h> // Við þurfum library til að teikna á skjá.
 #include <Adafruit_ILI9341.h> // Við þurfum library til að tala við ILI9341 stýringu á skjá.
 

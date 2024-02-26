@@ -21,5 +21,5 @@
   Serial.println(BUILDDATE);
   Serial.println("Hofundur: ");
   Serial.println("Samuel Hjaltalin");
-  Serial.println("https://ulfr.net/");
+  Serial.println("https://ulfraf.space/");
 }
